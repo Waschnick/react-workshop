@@ -5,6 +5,7 @@ You can find the most recent version of a guide [here](https://github.com/facebo
 
 ## You'll need
 
+<<<<<<< HEAD
 Node (brew install node) and npm;
 Webpack (npm install -g webpack webpack-dev-server)
 
