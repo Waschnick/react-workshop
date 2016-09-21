@@ -1,3 +1,11 @@
+## Sample Universe – Star Webapp for our React Workshop
+
+After checking out, you can use
+
+### `npm start` `npm build`
+
+to run the project.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.  
