@@ -1,0 +1,17 @@
+/**
+* Ellipsis Effect for Text
+*
+*/
+
+
+//
+// Ellipsis effect for single lines
+//
+
+@mixin single-ellipsis($width: auto) {
+  width: $width;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

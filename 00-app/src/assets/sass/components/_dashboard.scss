@@ -1,0 +1,177 @@
+/**
+* Dashboard Styles
+*
+*/
+
+
+
+//
+// Import CSS dependencies
+//
+
+@import "./../utility/font-smoothing";
+@import "./../utility/ellipsis";
+
+
+
+//
+// Dashboard Container
+//
+
+.dash {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top:  0;
+  width:  100%;
+  height: 100%;
+}
+
+.dash__titlebar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: #fff;
+  background-color: #4527a0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.dash__items {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+
+
+//
+// Dashboard UI elements
+//
+
+.dash__titlebar-item {
+  @include font-smoothing;
+  margin: 0 20px;
+
+  &.-stretch {
+    flex: 1;
+  }
+}
+
+/*a*/.dash__titlebar-link {
+  padding: 4px 10px;
+  font-size: 14px;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*a*/.dash__titlebar-link--active {
+  background-color: #fff;
+  color: #4527a0;
+}
+
+/*span*/.dash__titlebar-circle {
+  display: inline-block;
+  width:  24px;
+  height: 24px;
+  margin: 0 10px;
+  font-size: 12px;
+  color: #4527a0;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.dash__items__item-universe {
+  // [1] Reset underline in case container is an anchor
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width:  150px;
+  height: 150px;
+  margin: 10px;
+  text-decoration: none; // [1]
+}
+
+.dash__items__item-universe__image {
+  width:  100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: crimson;
+  overflow: hidden;
+}
+
+.dash__items__item-universe__title {
+  @include single-ellipsis;
+  font-size: 14px;
+  color: #000;
+}
+
+
+
+//
+// Dashboard overlay
+//
+
+.dash__overlay {
+  $top: 49px;
+  position: fixed;
+  top: $top;
+  left: 0;
+  width: 100%;
+  height: calc(100% - #{$top});
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 0.95);
+}
+
+.dash__overlay-title {
+  @include font-smoothing;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #e91e63;
+  text-align: center;
+}
+
+
+
+//
+// Forms
+//
+
+.input-text {
+  @include font-smoothing;
+  display: block;
+  max-width: 500px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 12px 8px;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.btn {
+  display: table;
+  margin: 40px auto;
+  padding: 0 40px;
+  line-height: 60px;
+  border-radius: 4px;
+  background-color: rgb(0, 255, 124);
+  cursor: pointer;
+}
