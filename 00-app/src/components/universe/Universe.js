@@ -30,7 +30,7 @@ class Universe extends Component {
     this.state = {
       stars: [],
       universes: [],
-      activeUniverse: 0
+      activeUniverse: this.props.params.id
     };
   }
 
@@ -69,7 +69,7 @@ class Universe extends Component {
   //
 
   componentDidMount() {
-    // GET stars and universe
+    // GET stars and universes
     axios.all([
       fetch(getStarURL), fetch(getUniverseURL)
     ])
