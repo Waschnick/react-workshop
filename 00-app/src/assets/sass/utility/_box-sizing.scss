@@ -1,0 +1,18 @@
+/**
+* More sensible default box-sizing:
+* css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+*/
+
+// Copied gratefully from inuitcss: https://github.com/inuitcss/inuitcss/blob/develop/generic/_generic.box-sizing.scss
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
