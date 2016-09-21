@@ -4,7 +4,8 @@
   "description": "The Workshop for React",
   "scripts": {
     "start": "webpack-dev-server --inline --watch --host=0.0.0.0",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "karma start test/karma.conf.js"
   },
   "author": "",
   "license": "ISC",
