@@ -10,5 +10,10 @@ module.exports = {
             {test: /\.scss$/, loaders: ['style', 'css', 'sass']},
             {test: /\.html$/, loaders: ['file?name=[path][name].[ext]?[hash]&context=./app/']}
         ]
+    },
+    jest: {
+        "scriptPreprocessor": "<rootDir>/node_modules/webpack-babel-jest",
+        "testFileExtensions": ["es6", "js"],
+        "moduleFileExtensions": ["js", "json", "es6"]
     }
 };
