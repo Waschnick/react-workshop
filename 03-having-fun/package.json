@@ -1,0 +1,29 @@
+{
+  "name": "ideas-react-workshop",
+  "version": "1.0.0",
+  "description": "The Workshop for React",
+  "scripts": {
+    "start": "webpack-dev-server --inline --watch --host=0.0.0.0",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "history": "^4.2.0",
+    "node-sass": "^3.10.0",
+    "react-router": "^2.8.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  }
+}

@@ -6,7 +6,7 @@ var expect = require('expect');
 
 describe('Home', function () {
 
-    it("should display the Div", function () {
+    it("should display the Div in my component", function () {
         var myComponent = TestUtils.renderIntoDocument(
             <Home answer="23"/>
         );
